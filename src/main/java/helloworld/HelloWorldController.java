@@ -10,11 +10,11 @@ public class HelloWorldController {
 
     @FXML private Button greetMeButton;
 
-    public void closeApplicationAction(ActionEvent e) {
+    public void closeApplicationAction(final ActionEvent e) {
         System.exit(0);
     }
 
-    public void handleGreetMeButton(ActionEvent e) {
+    public void handleGreetMeButton(final ActionEvent e) {
         Alert alert = new Alert(Alert.AlertType.INFORMATION, "Hallo Anwender!", ButtonType.OK);
         alert.showAndWait();
     }

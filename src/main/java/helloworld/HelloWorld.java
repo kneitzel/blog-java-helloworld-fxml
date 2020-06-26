@@ -10,12 +10,12 @@ import java.io.IOException;
 
 public class HelloWorld extends Application {
 
-    public static void main(String[] args) {
+    public static void main(final String[] args) {
         launch(args);
     }
 
     @Override
-    public void start(Stage primaryStage) throws IOException {
+    public void start(final Stage primaryStage) throws IOException {
         Parent root = FXMLLoader.load(getClass().getResource("HelloWorld.fxml"));
         Scene scene = new Scene(root);
         primaryStage.setScene(scene);
